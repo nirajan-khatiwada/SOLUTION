@@ -6,54 +6,180 @@
     <title>Question Bank Links</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
         }
         h1 {
             text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 2em;
         }
         ul {
             list-style-type: none;
             padding: 0;
         }
         li {
-            margin: 10px 0;
+            margin: 12px 0;
+            transition: transform 0.2s;
+        }
+        li:hover {
+            transform: translateX(5px);
         }
         a {
             text-decoration: none;
-            color: #007BFF;
+            color: #2c3e50;
+            display: block;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            transition: all 0.3s;
+            border: 1px solid #eee;
         }
         a:hover {
-            text-decoration: underline;
+            background: #e8f0fe;
+            color: #1a73e8;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        #loginForm {
+            text-align: center;
+            margin: 50px auto;
+            max-width: 300px;
+        }
+        .input-group {
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        input:focus {
+            outline: none;
+            border-color: #1a73e8;
+        }
+        button {
+            background: #1a73e8;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button:hover {
+            background: #1557b0;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        #content {
+            display: none;
+        }
+        .subject-heading {
+            font-weight: bold;
+            color: #1a73e8;
+            margin-top: 20px;
+            padding: 10px;
+            background: #e8f0fe;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <h1>Question Bank Links</h1>
-    <ul>
-        <li><a href="MATHS/Math II Question Bank 2075 - With Solution - Hamro CSIT.html">Math II Question Bank 2075</a></li>
-        <li><a href="MATHS/Math II Question Bank 2076 - With Solution - Hamro CSIT.html">Math II Question Bank 2076</a></li>
-        <li><a href="MATHS/Math II Question Bank 2078 - With Solution - Hamro CSIT.html">Math II Question Bank 2078</a></li>
-        <li><a href="MATHS/Math II Question Bank 2079 - With Solution - Hamro CSIT.html">Math II Question Bank 2079</a></li>
-        <li><a href="MATHS/Math Question Bank 2080 - With Solution - Hamro CSIT.html">Math Question Bank 2080</a></li>
-        <li><a href="MATHS/Mathematics II Question Banks - With Solution - Hamro CSIT.html">Mathematics II Question Banks 2080(new)</a></li>
-        <li><a href="OOP/OOPS (C++) Question Bank 2075 - With Solution - Hamro CSIT.html">OOPS (C++) Question Bank 2075</a></li>
-        <li><a href="OOP/OOPS (C++) Question Bank 2076 - With Solution - Hamro CSIT.html">OOPS (C++) Question Bank 2076</a></li>
-        <li><a href="OOP/OOPS (C++) Question Bank 2079 - With Solution - Hamro CSIT.html">OOPS (C++) Question Bank 2079</a></li>
-        <li><a href="OOP/OOPS Question Bank 2080 - With Solution - Hamro CSIT.html">OOPS Question Bank 2080</a></li>
-        <li><a href="OOP/Object-Oriented Programming Question Banks - With Solution - Hamro CSIT.html">OOPS Question Bank 2080(new)</a></li>
-        <li><a href="STATISTICS/Statistics I Question Bank 2075 - With Solution - Hamro CSIT.html">Statistics I Question Bank 2075</a></li>
-        <li><a href="STATISTICS/Statistics I Question Bank 2076 - With Solution - Hamro CSIT.html">Statistics I Question Bank 2076</a></li>
-        <li><a href="STATISTICS/Statistics I Question Bank 2078 - With Solution - Hamro CSIT.html">Statistics I Question Bank 2078</a></li>
-        <li><a href="STATISTICS/Statistics I Question Bank 2079 - With Solution - Hamro CSIT.html">Statistics I Question Bank 2079</a></li>
-        <li><a href="STATISTICS/STAT Question Bank 2080 - With Solution - Hamro CSIT.html">STAT Question Bank 2080</a></li>
-        <li><a href="STATISTICS/Statistics I Question Banks - With Solution - Hamro CSIT.html">STAT Question Bank 2080(new)</a></li>
-        <li><a href="MICROPROCESSOR/Microprocessor (MP) Question Bank 2075 - With Solution - Hamro CSIT.html">Microprocessor (MP) Question Bank 2075</a></li>
-        <li><a href="MICROPROCESSOR/Microprocessor (MP) Question Bank 2076 - With Solution - Hamro CSIT.html">Microprocessor (MP) Question Bank 2076</a></li>
-        <li><a href="MICROPROCESSOR/Microprocessor (MP) Question Bank 2078 - With Solution - Hamro CSIT.html">Microprocessor (MP) Question Bank 2078</a></li>
-        <li><a href="MICROPROCESSOR/Microprocessor (MP) Question Bank 2079 - With Solution - Hamro CSIT.html">Microprocessor (MP) Question Bank 2079</a></li>
-        <li><a href="MICROPROCESSOR/MP Question Bank 2080 - With Solution - Hamro CSIT.html">MP Question Bank 2080</a></li>
-        <li><a href="MICROPROCESSOR/MP Question Bank 2080(new) - With Solution - Hamro CSIT.html">MP Question Bank 2080(new)</a></li>
-    </ul>
+    <div class="container">
+        <div id="loginForm">
+            <h1>Question Bank Access</h1>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Enter password" autocomplete="off">
+            </div>
+            <button onclick="checkPassword()">Access Content</button>
+        </div>
+
+        <div id="content">
+            <h1>Question Bank Links</h1>
+            <div class="subject-heading">Mathematics II</div>
+            <ul>
+                <li><a href="MATHS/Math II Question Bank 2075 - With Solution - Hamro CSIT.html">Math II Question Bank 2075</a></li>
+                <li><a href="MATHS/Math II Question Bank 2076 - With Solution - Hamro CSIT.html">Math II Question Bank 2076</a></li>
+                <li><a href="MATHS/Math II Question Bank 2078 - With Solution - Hamro CSIT.html">Math II Question Bank 2078</a></li>
+                <li><a href="MATHS/Math II Question Bank 2079 - With Solution - Hamro CSIT.html">Math II Question Bank 2079</a></li>
+                <li><a href="MATHS/Math Question Bank 2080 - With Solution - Hamro CSIT.html">Math Question Bank 2080</a></li>
+                <li><a href="MATHS/Mathematics II Question Banks - With Solution - Hamro CSIT.html">Mathematics II Question Banks 2080(new)</a></li>
+            </ul>
+
+            <div class="subject-heading">Object Oriented Programming</div>
+            <ul>
+                <li><a href="OOP/OOPS (C++) Question Bank 2075 - With Solution - Hamro CSIT.html">OOPS (C++) Question Bank 2075</a></li>
+                <li><a href="OOP/OOPS (C++) Question Bank 2076 - With Solution - Hamro CSIT.html">OOPS (C++) Question Bank 2076</a></li>
+                <li><a href="OOP/OOPS (C++) Question Bank 2079 - With Solution - Hamro CSIT.html">OOPS (C++) Question Bank 2079</a></li>
+                <li><a href="OOP/OOPS Question Bank 2080 - With Solution - Hamro CSIT.html">OOPS Question Bank 2080</a></li>
+                <li><a href="OOP/Object-Oriented Programming Question Banks - With Solution - Hamro CSIT.html">OOPS Question Bank 2080(new)</a></li>
+            </ul>
+
+            <div class="subject-heading">Statistics I</div>
+            <ul>
+                <li><a href="STATISTICS/Statistics I Question Bank 2075 - With Solution - Hamro CSIT.html">Statistics I Question Bank 2075</a></li>
+                <li><a href="STATISTICS/Statistics I Question Bank 2076 - With Solution - Hamro CSIT.html">Statistics I Question Bank 2076</a></li>
+                <li><a href="STATISTICS/Statistics I Question Bank 2078 - With Solution - Hamro CSIT.html">Statistics I Question Bank 2078</a></li>
+                <li><a href="STATISTICS/Statistics I Question Bank 2079 - With Solution - Hamro CSIT.html">Statistics I Question Bank 2079</a></li>
+                <li><a href="STATISTICS/STAT Question Bank 2080 - With Solution - Hamro CSIT.html">STAT Question Bank 2080</a></li>
+                <li><a href="STATISTICS/Statistics I Question Banks - With Solution - Hamro CSIT.html">STAT Question Bank 2080(new)</a></li>
+            </ul>
+
+            <div class="subject-heading">Microprocessor</div>
+            <ul>
+                <li><a href="MICROPROCESSOR/Microprocessor (MP) Question Bank 2075 - With Solution - Hamro CSIT.html">Microprocessor (MP) Question Bank 2075</a></li>
+                <li><a href="MICROPROCESSOR/Microprocessor (MP) Question Bank 2076 - With Solution - Hamro CSIT.html">Microprocessor (MP) Question Bank 2076</a></li>
+                <li><a href="MICROPROCESSOR/Microprocessor (MP) Question Bank 2078 - With Solution - Hamro CSIT.html">Microprocessor (MP) Question Bank 2078</a></li>
+                <li><a href="MICROPROCESSOR/Microprocessor (MP) Question Bank 2079 - With Solution - Hamro CSIT.html">Microprocessor (MP) Question Bank 2079</a></li>
+                <li><a href="MICROPROCESSOR/MP Question Bank 2080 - With Solution - Hamro CSIT.html">MP Question Bank 2080</a></li>
+                <li><a href="MICROPROCESSOR/MP Question Bank 2080(new) - With Solution - Hamro CSIT.html">MP Question Bank 2080(new)</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const correctPassword = "freeascess";
+        
+        function checkPassword() {
+            const password = document.getElementById('password').value;
+            if (password === correctPassword) {
+                document.getElementById('loginForm').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+                localStorage.setItem('authenticated', 'true');
+            } else {
+                alert('Incorrect password! Please try again.');
+                document.getElementById('password').value = '';
+            }
+        }
+
+        document.getElementById('password').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                checkPassword();
+            }
+        });
+
+        // Check if user was previously authenticated
+        if (localStorage.getItem('authenticated') === 'true') {
+            document.getElementById('loginForm').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        }
+    </script>
 </body>
 </html>
